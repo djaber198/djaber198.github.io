@@ -118,7 +118,7 @@
     </div>
   </div>
 
- <script>
+<script>
   // ضبط تاريخ بدء البيع المسبق على 01 يونيو 2025 الساعة 12:00 مساءً بالتوقيت المحلي
   const presaleStart = new Date('2025-06-01T12:00:00');
 
@@ -131,21 +131,8 @@
       const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
       const minutes = Math.floor((diff / 1000 / 60) % 60);
       const seconds = Math.floor((diff / 1000) % 60);
-      document.getElementById("countdown").innerText = `Presale begins in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
-    } else {
-      document.getElementById("countdown").innerText = "Presale is LIVE!";
-    }
-  }
-
-  setInterval(updateCountdown, 1000);
-  updateCountdown();
-</script>
-
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
+      document.getElementById("countdown").innerText = `Presale begins in: ${days}d ${hours
+<script>
 
 </body>
 </html>
