@@ -100,21 +100,20 @@
 <body>
   <div class="container">
     <div class="logo-wrapper">
-      <img src="logo-toulg.png" alt="شعار العملة">
+      <img src="logo-toulg.png" alt="شعار العملة" />
     </div>
+
     <h1>TOULG</h1>
     <p>The Roman Spirit Reborn on Solana. A meme coin forged in the fires of the empire.</p>
+
     <div class="countdown" id="countdown">Presale begins in: Loading...</div>
 
     <div class="buttons">
-      <a class="btn" href="https://x.com/ToulgTOL?t=iNz0f3kf6Yp4TqCY5-bgWg&s=09" target="_blank">Join Twitter</a>
-      <a class="btn" href="https://t.me/TOULGTOL" target="_blank">Join Telegram</a>
-      <a class="btn" href="#" target="_blank" id="presale-link">Presale Page</a>
-      <a class="btn" href="whitepaper.html" target="_blank">Whitepaper</a>
-
-
+      <a class="btn" href="https://x.com/ToulgTOL?t=iNz0f3kf6Yp4TqCY5-bgWg&s=09" target="_blank" rel="noopener noreferrer">Join Twitter</a>
+      <a class="btn" href="https://t.me/TOULGTOL" target="_blank" rel="noopener noreferrer">Join Telegram</a>
+      <a class="btn" href="#" id="presale-link" target="_blank" rel="noopener noreferrer">Presale Page</a>
+      <a class="btn" href="whitepaper.html" target="_blank" rel="noopener noreferrer">Whitepaper</a>
     </div>
-
 
     <div class="footer">
       Smart contract coming soon • Powered by Solana
@@ -130,19 +129,4 @@
       const diff = presaleStart - now;
 
       if (diff > 0) {
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((diff / 1000 / 60) % 60);
-        const seconds = Math.floor((diff / 1000) % 60);
-        document.getElementById("countdown").innerText =
-          `Presale begins in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
-      } else {
-        document.getElementById("countdown").innerText = "Presale is LIVE!";
-      }
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
-</body>
-</html>
+        const days = Math.floor(diff / (100
